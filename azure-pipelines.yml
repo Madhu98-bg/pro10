@@ -14,5 +14,5 @@ steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'HelloMaven/pom.xml'
-    mavenPomFile: '-f HelloMaven/pom.xml'
+    options: '-f HelloMaven/pom.xml'
     goals: 'clean install'
