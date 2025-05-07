@@ -13,6 +13,8 @@ steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'HelloMaven/pom.xml'
+    options: '-f HelloMaven/pom.xml'
+    goals: 'clean install'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.11'
