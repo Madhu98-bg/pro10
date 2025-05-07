@@ -10,8 +10,8 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- task: Checkout@1
 - task: Maven@3
   inputs:
     mavenPomFile: 'HelloMaven/pom.xml'
-    options: '-f HelloMaven/pom.xml'
     goals: 'clean install'
