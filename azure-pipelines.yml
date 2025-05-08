@@ -12,8 +12,8 @@ pool:
 steps:
 - task: Maven@3
   inputs:
-    mavenPomFile: 'HelloMaven/pom.xml'
-    Options: '-f HelloMaven/pom.xml'
+    mavenPomFile: 'Hello World!/pom.xml'
+    Options: '-f Hello World!/pom.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.11'
