@@ -13,4 +13,4 @@ steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'Hello World!/pom.xml'
-    goals: 'package'
+    goals: 'clean install'
